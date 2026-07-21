@@ -1,0 +1,41 @@
+/* -------------------------------------------------------
+   Design tokens — inspirados en el "portal" de Rick and Morty
+   ------------------------------------------------------- */
+:root {
+  --bg-deep: #10132b;        /* fondo espacial */
+  --bg-panel: #171b3d;       /* paneles / tarjetas */
+  --bg-panel-hover: #1e2350;
+  --portal-green: #97ce4c;   /* verde de portal, color oficial de la serie */
+  --portal-green-dim: #6d9c34;
+  --morty-yellow: #f2e216;   /* acento secundario */
+  --alive: #7ee081;
+  --dead: #ff6b6b;
+  --unknown: #b7bcd6;
+  --text-main: #f4f6ff;
+  --text-muted: #9aa0c7;
+  --border-soft: rgba(151, 206, 76, 0.25);
+
+  --font-display: 'Baloo 2', system-ui, sans-serif;
+  --font-body: 'Space Grotesk', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at 20% 0%, #1c2154 0%, var(--bg-deep) 55%);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  min-height: 100vh;
+}
+
+button, input, select {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--portal-green);
+  color: #0b0d1f;
+}
